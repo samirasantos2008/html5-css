@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/ico.png" type="image/x-icon">
+    <title>Filmes</title>
+    <style>
+        boby {
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+            line-height: 2em;
+            padding-left: 30px;
+            font-size: 2em;
+        }
+        h1 {
+            color: black;
+            
+        }
+        table {
+            border-collapse:  separate;
+            width: 500px;
+            height: 500px;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 10px;
+            color: black;
+        }
+        th,td {
+            border: 1px solid gray;
+            padding: 10px;
+        }
+        th {
+            color: aliceblue;
+            background-color: black;
+            border-radius: 8px;
+        }
+        td {
+            color: black;
+            background-color: rgb(246, 248, 248);
+            border-radius: 8px;
+        }
+        td:hover {
+            background-color:  rgb(122, 205, 243);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabelas</h1>
+    <table>
+        <caption>
+            Filmes Favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th>Grupos</th>
+                <th>Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row"> Total</th>
+                <th>18</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td><a href="https://www.adorocinema.com/pesquisar/?q=Alien%2C+o+8%C2%BA+Passageiro" target="_blank">Alien</a> <br> <img src="Imagens/Alien1.png" alt=""></td>
+                <td><a href="https://www.adorocinema.com/filmes/filme-2007/" target="_blank">Rambo</a> <br> <img src="Imagens/rambo1.jpg" alt=""></td>
+                <td><a href="https://www.adorocinema.com/filmes/filme-232669/" target="_blank">Vingadores</a> <br> <img src="Imagens/vingadores1.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td><a href="https://www.adorocinema.com/pesquisar/?q=hulk" target="_blank">Hulk </a><br> <img src="Imagens/Hulk1.jpg" alt=""></td>
+                <td><a href="https://www.adorocinema.com/filmes/filme-143692/" target="_blank">Inception </a><br> <img src="Imagens/inception1.jpg" alt=""></td>
+                <td><a href="https://www.adorocinema.com/filmes/filme-211012/" target="_blank">Batman </a><br> <img src="Imagens/batman1.webp" alt=""></td>
+            </tr>
+            <tr>
+                <td>Cláudia Melo</td>
+                <td><a href="https://www.adorocinema.com/filmes/filme-27405/" target="_blank">Oblivion </a><br> <img src="Imagens/Oblivion1.png" alt=""></td>
+                <td><a href="https://www.adorocinema.com/filmes/filme-19776/" target="_blank">Matrix</a> <br> <img src="Imagens/Matrix1.JPG" alt=""></td>
+                <td><a href="https://www.adorocinema.com/filmes/filme-209529/" target="_blank">Big Hero</a> <br> <img src="Imagens/Big Hero1.png" alt=""></td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td><a href="https://www.adorocinema.com/filmes/filme-182745/" target="_blank">Intocáveis</a> <br> <img src="Imagens/Intocáveis1.png" alt=""></td>
+                <td><a href="https://www.adorocinema.com/filmes/filme-25744/" target="_blank">Amnésia </a><br> <img src="Imagens/Amnésia1.webp" alt=""></td>
+                <td><a href="https://www.adorocinema.com/filmes/filme-24944/" target="_blank">Gladiador </a><br> <img src="Imagens/Gladiador1.webp" alt=""></td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td><a href="https://www.adorocinema.com/filmes/filme-123734/" target="_blank">Wall-E </a><br> <br> <img src="Imagens/Wall-E1.webp" alt=""></td>
+                <td><a href="https://www.adorocinema.com/filmes/filme-54137/" target="_blank">Oldboy</a> <br> <img src="Imagens/Oldboy1.jpg" alt=""></td>
+                <td><a href="https://www.adorocinema.com/filmes/filme-251273/" target="_blank">Dangal</a> <br> <img src="Imagens/Dangal1.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td><a href="https://www.adorocinema.com/filmes/filme-215097/" target="_blank">Star Wars</a> <br> <img src="Imagens/Star Wars1.jpg" alt=""></td>
+                <td><a href="https://www.adorocinema.com/filmes/filme-308/" target="_blank">Taxi Driver</a> <br> <img src="Imagens/Taxi Driver1.jpg" alt=""></td>
+                <td><a href="https://www.adorocinema.com/filmes/filme-14264/" target="_blank">Toy Story</a> <br> <img src="Imagens/Toy Story1.webp" alt=""></td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
