@@ -9,11 +9,11 @@
 html, boby {
     height: 100vh;
     width: 100vh;
-    background-color: black;
+    background-color:;
 }
 
 boby {
-    background: url(../pacote-d013/imagens/fundo-madeira.jpg) no-repeat top center;
+    background: url(../imagens/fundo-madeira.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -33,7 +33,7 @@ section#telefone {
     height: 627px;
     width: 311px;
     background-color: blue;
-    background: url(../pacote-d013/imagens/frame-iphone.png);
+    background: url(../imagens/frame-iphone.png);
 }
 iframe#tela {
     position: relative;
