@@ -6,14 +6,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html, boby {
+html, body {
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
     background-color: black;
 }
 
-boby {
-    background: url(../imagens/fundo-madeira.jpg);
+body {
+    background: url('../pacote-d013/imagens/fundo-madeira.jpg') no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -33,7 +33,7 @@ section#telefone {
     height: 627px;
     width: 311px;
     background-color: blue;
-    background: url(../imagens/frame-iphone.png);
+    background: url('../pacote-d013/imagens/frame-iphone.png');
 }
 iframe#tela {
     position: relative;
