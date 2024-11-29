@@ -1,0 +1,33 @@
+@charset (utf-8);
+
+/* typical device breakpoint
+----------------------------
+pequenas telass: ate 600px
+celular: ate 768px
+tablet: 768px ate 992px
+desktop: 992 ate 1200px
+*/
+
+@media print {/* IMPRESSÃO */
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
+    
+    body {
+        background-image: url(../Imagens/back-tablet.jpg);
+    }
+    
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* DESKTOP */
+    
+}
+@media screen and (Min-width: 1200px)  { /* GRANDES TELAS */
+    
+}
