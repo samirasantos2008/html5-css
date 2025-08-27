@@ -1,0 +1,279 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Biblioteca Virtual</title>
+  <link rel="shortcut icon" href="img icon.png" type="image/x-icon">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .book-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 20px auto;
+    }
+   
+    .book img {
+      max-width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 6px 12px;
+      background: #2ecc71;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #27ae60;
+    }
+    .top-link {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .top-link a {
+      text-decoration: none;
+      background: #3498db;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 6px;
+    }
+    .top-link a:hover {
+      background: #2980b9;
+    }
+
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+     header a.icon-link {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      text-decoration: none;
+      font-size: 22px;
+      color: white;
+      background: rgba(255,255,255,0.2);
+      padding: 8px 12px;
+      border-radius: 50%;
+      transition: background 0.3s;
+    }
+
+    header a.icon-link:hover {
+      background: rgba(255,255,255,0.4);
+    }
+    .search-bar {
+      margin: 20px auto;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .search-bar input[type="text"] {
+      width: 70%;
+      padding: 10px;
+      font-size: 16px;
+       border: 2px solid #4a90e2;
+      border-radius: 25px;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    .search-bar input[type="text"]:focus {
+      border-color: #357ABD;
+      box-shadow: 0 0 10px rgba(53, 122, 189, 0.3);
+    }
+
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .search-bar button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .book {
+      background: white;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .book img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .book:hover {
+      transform: translateY(-5px);
+    }
+
+    .book h3 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
+
+    .book p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .book a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: #4a90e2;
+      color: white;
+      text-decoration: none;
+      border-radius: 3px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #eee;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <script>
+const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
+if(!usuarioLogado){
+  alert('Você precisa estar logado para acessar a biblioteca.');
+  window.location.href='login.html';
+}
+</script>
+
+  <header>
+    <h1>📚 Biblioteca Virtual</h1>
+    <p>Leia e descubra novos livros online!</p>
+    <a href="lidos.html" class="icon-link" title="Livros já lidos">✅</a>
+  </header>
+
+
+  
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Buscar por título ou autor..." />
+    <button>Buscar</button>
+  </div>
+
+  <section class="book-grid" id="bookGrid">
+    <!-- 20 livros -->
+    <div class="book"><img src="3.jpg" alt=""><h3>Dom Casmurro</h3><p>Machado de Assis</p><a href="dom casmurro.html">Ler Agora</a><button onclick="marcarComoLido('Dom Casmurro', 'Machado de Assis', '3.jpg')">✔ Marcar como Lido</button></div>
+    <div class="book"><img src="4.jpg" alt=""><h3>Harry Potter e a Pedra Filosofal</h3><p>J.K. Rowling</p><a href="harry potter.html">Ler Agora</a><button onclick="marcarComoLido('Harry Potter e a Pedra Filosofal', 'J.K. Rowling', '4.jpg')">✔ Marcar como Lido</button></div>
+    <div class="book"><img src="8.jpg" alt=""><h3>O Pequeno Príncipe</h3><p>Saint-Exupéry</p><a href="O Pequeno Príncipe.html">Ler Agora</a><button onclick="marcarComoLido('O Pequeno Príncipe', 'Saint-Exupéry', '8.jpg')">✔ Marcar como Lido</button></div>
+    <div class="book"><img src="9.jpg" alt=""><h3>A Culpa é das Estrelas</h3><p>John Green</p><a href="A Culpa é.html">Ler Agora</a><button onclick="marcarComoLido('A Culpa é das Estrelas', 'John Green', '9.jpg')">✔ Marcar como Lido</button></div>
+    <div class="book"><img src="22.jpg" alt="coroline.html"><h3>Coraline</h3><p>Neil Gaiman</p><a href="coroline.html">Ler Agora</a><button onclick="marcarComoLido('Coraline', 'Neil Gaiman', '22.jpg')">✔ Marcar como Lido</button></div>
+    <div class="book"><img src="23.jpg" alt=""><h3>Veronika Decide Morrer</h3><p>Paulo Coelho</p><a href="Veronika.html">Ler Agora</a><button onclick="marcarComoLido('Veronika Decide Morrer', 'Paulo Coelho', '23.jpg')">✔ Marcar como Lido</button></div>
+    <div class="book"><img src="24.jpg" alt=""><h3>It: A Coisa</h3><p>Stephen King</p><a href="It.html">Ler Agora</a><button onclick="marcarComoLido('It: A Coisa', 'Stephen King', '24.jpg')">✔ Marcar como Lido</button></div>
+     <div class="book"><img src="2.jpg" alt=""><h3>1984</h3><p>George Orwell</p><a href="1984.html">Ler Agora</a><button onclick="marcarComoLido('1984', 'George Orwell', '2.jpg')">✔ Marcar como Lido</button></div>
+    <div class="book"><img src="5.jpg" alt=""><h3>A Revolução dos Bichos</h3><p>George Orwell</p><a href="A Revolução dos Bichos George Orwell.html">Ler Agora</a><button onclick="marcarComoLido('A Revolução dos Bichos', 'George Orwell', '5.jpg')">✔ Marcar como Lido</button></div>
+    <div class="book"><img src="6.jpg" alt=""><h3>Capitães da Areia</h3><p>Jorge Amado</p><a href="Capitães da Areia.html">Ler Agora</a><button onclick="marcarComoLido('Capitães da Areia', 'Jorge Amado', '6.jpg')">✔ Marcar como Lido</button></div>
+    <div class="book"><img src="7.jpg" alt=""><h3>A Metamorfose</h3><p>Franz Kafka</p><a href="metamorfose.html">Ler Agora</a><button onclick="marcarComoLido('A Metamorfose', 'Franz Kafka', '7.jpg')">✔ Marcar como Lido</button></div>
+    <div class="book"><img src="10.jpg" alt=""><h3>Orgulho e Preconceito</h3><p>Jane Austen</p><a href="orgulho.html">Ler Agora</a><button onclick="marcarComoLido('Orgulho e Preconceito', 'Jane Austen', '10.jpg')">✔ Marcar como Lido</button></div>
+    <div class="book"><img src="11.jpg" alt=""><h3>O Código Da Vinci</h3><p>Dan Brown</p><a href="o codigo do .html">Ler Agora</a><button onclick="marcarComoLido('O Código Da Vinci', 'Dan Brown', '11.jpg')">✔ Marcar como Lido</button></div>
+    <div class="book"><img src="12.jpg" alt=""><h3>Drácula</h3><p>Bram Stoker</p><a href="Drácula.html">Ler Agora</a><button onclick="marcarComoLido('Drácula', 'Bram Stoker', '12.jpg')">✔ Marcar como Lido</button></div>
+    <div class="book"><img src="13.jpg" alt=""><h3>O Alquimista</h3><p>Paulo Coelho</p><a href="alquimista.html">Ler Agora</a><button onclick="marcarComoLido('O Alquimista', 'Paulo Coelho', '13.jpg')">✔ Marcar como Lido</button></div>
+    <div class="book"><img src="14.jpg" alt=""><h3>A Menina que Roubava Livros</h3><p>Markus Zusak</p><a href="A menina.html">Ler Agora</a><button onclick="marcarComoLido('A Menina que Roubava Livros', 'Markus Zusak', '14.jpg')">✔ Marcar como Lido</button></div>
+    <div class="book"><img src="15.jpg" alt=""><h3>Memórias Póstumas de Brás Cubas</h3><p>Machado de Assis</p><a href="memorias.html">Ler Agora</a><button onclick="marcarComoLido('Memórias Póstumas de Brás Cubas', 'Machado de Assis', '15.jpg')">✔ Marcar como Lido</button></div>
+    <div class="book"><img src="16.jpg" alt=""><h3>O Hobbit</h3><p>J.R.R. Tolkien</p><a href="hobbit.html">Ler Agora</a><button onclick="marcarComoLido('O Hobbit', 'J.R.R. Tolkien', '16.jpg')">✔ Marcar como Lido</button></div>
+    <div class="book"><img src="17.jpg" alt=""><h3>A Cabana</h3><p>William P. Young</p><a href="a Cabana.html">Ler Agora</a><button onclick="marcarComoLido('A Cabana', 'William P. Young', '17.jpg')">✔ Marcar como Lido</button></div>
+    <div class="book"><img src="18.jpg" alt=""><h3>Senhora</h3><p>José de Alencar</p><a href="senhora.html">Ler Agora</a><button onclick="marcarComoLido('Senhora', 'José de Alencar', '18.jpg')">✔ Marcar como Lido</button></div>
+  </section>
+
+  <footer>
+    <p>© 2025 Biblioteca Virtual | Desenvolvido por Você</p>
+  </footer>
+
+  <script>
+  const searchInput = document.getElementById('searchInput');
+  const bookGrid = document.getElementById('bookGrid');
+  const books = bookGrid.getElementsByClassName('book');
+
+  searchInput.addEventListener('keyup', function() {
+    const filter = searchInput.value.toLowerCase();
+
+    for (let i = 0; i < books.length; i++) {
+      const title = books[i].getElementsByTagName('h3')[0].textContent.toLowerCase();
+      const author = books[i].getElementsByTagName('p')[0].textContent.toLowerCase();
+
+      if (title.includes(filter) || author.includes(filter)) {
+        books[i].style.display = '';
+      } else {
+        books[i].style.display = 'none';
+      }
+    }
+  });
+
+  function marcarComoLido(titulo, autor, imagem) {
+  let livrosLidos = JSON.parse(localStorage.getItem("livrosLidos")) || [];
+
+  // Evita duplicados
+  if (!livrosLidos.some(livro => livro.titulo === titulo)) {
+    livrosLidos.push({ titulo, autor, imagem });
+    localStorage.setItem("livrosLidos", JSON.stringify(livrosLidos));
+    alert(`📚 Você marcou "${titulo}" como lido!`);
+  } else {
+    alert(`✔ O livro "${titulo}" já está marcado como lido.`);
+  }
+}
+
+function marcarComoLido(titulo, autor, imagem) {
+    // Confirmação antes de marcar
+    if (confirm(`Deseja realmente marcar "${titulo}" como lido?`)) {
+      let livrosLidos = JSON.parse(localStorage.getItem("livrosLidos")) || [];
+
+      // Verifica se o livro já está na lista
+      const existe = livrosLidos.some(livro => livro.titulo === titulo);
+      if (existe) {
+        alert(`📖 "${titulo}" já está na lista de livros lidos!`);
+        return;
+      }
+
+      livrosLidos.push({ titulo, autor, imagem });
+      localStorage.setItem("livrosLidos", JSON.stringify(livrosLidos));
+      alert(`📖 "${titulo}" marcado como lido!`);
+    }
+  }
+</script>
+</body>
+</html>
+

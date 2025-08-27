@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca online</title>
+    <link rel="shortcut icon" href="img icon.png" type="image/x-icon">
+    <style>
+body {
+  background-color: #e3ded2; /* fundo estilo mesa de leitura */
+  font-family: 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+  color: #3b2f2f;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.book-page {
+  width: 800px;
+  background: #fff8e7; /* cor de papel antigo */
+  padding: 60px 80px;
+  margin: 30px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2), inset 0 0 20px rgba(0,0,0,0.05);
+  border-radius: 15px;
+  line-height: 1.9;
+  position: relative;
+  overflow: hidden;
+}
+
+.book-page::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: repeating-linear-gradient(
+    rgba(0,0,0,0.01) 0px, rgba(0,0,0,0.01) 1px,
+    transparent 1px, transparent 4px
+  );
+  pointer-events: none; /* efeito textura de papel */
+}
+
+.book-page h1, .book-page h2, .book-page h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+
+.book-page p {
+  text-indent: 50px; /* indentação clássica */
+  margin-bottom: 20px;
+  text-align: justify; /* justificado como livro impresso */
+}
+
+.page-number {
+  text-align: center;
+  font-size: 14px;
+  color: #8b7d6b;
+  margin-top: 40px;
+  letter-spacing: 1px;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .book-page {
+    width: 90%;
+    padding: 40px 30px;
+  }
+  .book-page p {
+    text-indent: 30px;
+  }
+}
+</style>
+</head>
+<body>
+    <div class="book-page">
+        Harry Potter e a Pedra Filosofal
+        <div class="page-number">Capítulo 1 – O Menino que Sobreviveu</div>
+        
+        <p>Vernon Dursley, um homem corpulento e sério que trabalha como diretor de uma fábrica de perfurações, leva uma vida extremamente normal com sua esposa Petúnia e seu filho pequeno, Duda. Eles prezam por rotinas previsíveis e detestam qualquer tipo de excentricidade. Na manhã em que a história começa, Vernon sai para o trabalho e percebe pequenas coisas estranhas acontecendo, como pessoas vestidas com roupas extravagantes e capas coloridas, algo incomum para aquela cidade pacata.</p>
+        
+        <p>Enquanto dirige, ele nota um gato sentado imóvel lendo um mapa, o que o deixa intrigado, mas ele tenta ignorar, convencendo-se de que foi apenas imaginação. No caminho para o escritório, repara novamente em pessoas vestidas de forma esquisita, que parecem estar celebrando algo. Essas pessoas estão cochichando sobre alguém chamado "Harry Potter", um nome que ele acha familiar, mas não consegue lembrar de onde.</p>
+        
+        <p>No escritório, Vernon tenta focar no trabalho, mas a quantidade de pessoas comemorando e a menção constante a "o menino" e "Voldemort" o deixam desconfortável. Durante o dia, ele ouve até um grupo de corujas voando em plena luz do dia, algo incomum. No final da tarde, ele volta para casa decidido a não comentar nada com Petúnia para evitar discussões.</p>
+        
+        <p>À noite, em outro ponto da cidade, um homem idoso com longas vestes e barba prateada aparece: é Alvo Dumbledore. Ele se encontra exatamente no local onde Vernon havia visto o gato de manhã. Acontece que o gato é, na verdade, Minerva McGonagall, transformada por magia para observar o bairro e garantir que tudo está seguro.</p>
+        
+        <p>Dumbledore e McGonagall conversam sobre os acontecimentos recentes: a queda de Lord Voldemort, o bruxo mais temido de todos os tempos, que matou inúmeros inocentes e, por último, atacou a família Potter. No entanto, a maldição mortal lançada contra o bebê Harry não funcionou; ela ricocheteou e destruiu Voldemort, deixando apenas uma cicatriz em forma de raio na testa da criança.</p>
+        
+        <p>O responsável por trazer Harry até ali é Rúbeo Hagrid, um homem enorme e gentil que chega voando em uma motocicleta mágica. Ele entrega o bebê nos braços de Dumbledore. Apesar da tristeza pelo destino dos pais de Harry, eles sabem que o menino precisa ser criado longe da fama do mundo bruxo até estar pronto para encarar sua história.</p>
+        
+        <p>Dumbledore deixa uma carta explicando toda a situação para os Dursley, na esperança de que cuidem bem do menino. McGonagall demonstra preocupação, dizendo que Petúnia odeia qualquer coisa ligada à magia e teme que Harry sofra. Mas Dumbledore acredita que o sangue da irmã de Lílian Potter protegerá o garoto.</p>
+        
+        <p>Após se despedirem, Dumbledore, McGonagall e Hagrid deixam o bebê enrolado em um cobertor na porta da casa, dormindo pacificamente. A noite está silenciosa, e ninguém imagina que aquele menino comum se tornaria um dos bruxos mais famosos e importantes da história. Assim começa a jornada de Harry Potter — o menino que sobreviveu.</p>
+        
+        <div class="page-number">Capítulo 2 – O Vidro Sumiu</div>
+        
+        <p>Dez anos se passam desde que Harry Potter foi deixado na porta dos Dursley. Agora com 11 anos, ele vive uma vida miserável na casa da Rua dos Alfeneiros. Seu quarto é, na verdade, um armário embaixo da escada, escuro e apertado. Harry é constantemente maltratado pelos tios e pelo primo Duda, um garoto gorducho e extremamente mimado que adora atormentá-lo. Enquanto Duda tem um quarto só para brinquedos, Harry veste roupas velhas e largas que sobraram do primo.</p>
+        
+        <p>Petúnia, a tia de Harry, não perde a oportunidade de criticá-lo, principalmente pelo seu cabelo rebelde e seus óculos quebrados. Vernon, o tio, também o trata com frieza, deixando claro que preferiria que Harry não estivesse ali. Desde pequeno, o garoto sabe que há algo diferente com ele, mas os tios nunca explicam nada. Sempre que algo estranho acontece, eles o castigam, dizendo que não toleram “esse tipo de coisa”.</p>
+        
+        <p>Certa manhã, Harry é acordado pelo barulho da tia chamando-o para preparar o café da manhã. É o aniversário de Duda, e tudo precisa ser perfeito. No meio da cozinha, Duda começa a abrir seus presentes e, para fingir estar feliz, conta-os em voz alta, reclamando porque são “apenas” 37, menos do que ganhou no ano anterior. Os Dursley tratam o dia como uma grande celebração, enquanto Harry fica de lado, quase esquecido.</p>
+        
+        <p>Harry fica sabendo que vai acompanhar a família a um passeio no zoológico, pois a babá habitual não pode ficar com ele. Inicialmente, os tios hesitam em levá-lo, com medo de que algo “estranho” aconteça, mas acabam concordando depois que ameaçam deixá-lo trancado no carro se ele fizer qualquer “gracinha mágica”. O primo de Duda, Piers Polkiss, também vai junto, e os dois planejam passar o dia zombando de Harry.</p>
+        
+        <p>No zoológico, a visita começa de forma comum. Duda e Piers observam vários animais, enquanto Harry anda atrás, tentando não chamar atenção. Ao chegar no setor de répteis, Duda se interessa por uma enorme píton, mas logo perde o interesse quando percebe que o animal está imóvel, dormindo. Piers e Duda vão embora, deixando Harry sozinho diante do terrário.</p>
+        
+        <p>Harry, curioso, observa a cobra e comenta baixinho que entende como é ficar preso e entediado. Para sua surpresa, a píton levanta a cabeça, olha diretamente para ele e pisca, como se entendesse. Mais espantoso ainda, a cobra começa a se mexer lentamente e parece responder com gestos ao que Harry diz, como se estivessem realmente conversando.</p>
+        
+        <p>Enquanto Harry e a cobra “trocam” mensagens, Piers percebe a movimentação e chama Duda. O primo se aproxima bruscamente, empurrando Harry para o lado. Nesse momento, algo inexplicável acontece: o vidro do terrário simplesmente desaparece. A cobra aproveita para deslizar para fora e, antes de ir embora, lança um “obrigado” silencioso para Harry, deixando todos em choque.</p>
+        
+        <p>O zoológico entra em confusão, pessoas gritam, e os Dursley ficam furiosos. De volta para casa, Vernon dá um sermão em Harry, acusando-o de ter feito algo “anormal” de propósito. Harry, sem entender completamente como aquilo aconteceu, percebe que mais uma vez algo estranho e mágico veio dele — mas, como sempre, ninguém lhe dá respostas.</p>
+        
+        <div class="page-number">Capítulo 3 – As Cartas de Ninguém</div>
+        
+        <p>Poucos dias depois do incidente no zoológico, Harry continua sendo tratado com frieza e desprezo pelos Dursley. Mas algo inesperado acontece: uma carta chega para ele pelo correio, endereçada com detalhes precisos, incluindo “O armário embaixo da escada”. Ele nunca recebeu correspondência antes e fica intrigado.</p>
+        
+        <p>Quando Harry tenta abrir a carta, o tio Vernon arranca-a de suas mãos antes que ele possa ler. O homem fica pálido ao ver o remetente, esconde o envelope e manda o sobrinho sair da cozinha. Vernon e Petúnia agem como se estivessem diante de um grande perigo.</p>
+        
+        <p>No dia seguinte, outra carta chega, mas Vernon a intercepta novamente. A cada nova tentativa, mais cartas surgem, sempre com endereços cada vez mais detalhados, mencionando onde Harry está dormindo, mesmo quando mudam seu quarto para despistarem.</p>
+        
+        <p>Vernon entra em desespero e toma medidas extremas: coloca pregos nas fendas das portas, lacra a caixa de correio e vigia a casa. Mas as cartas continuam chegando por métodos inexplicáveis: pela chaminé, debaixo das portas e até escondidas no café da manhã.</p>
+        
+        <p>No domingo, Vernon comemora porque o carteiro não entrega cartas. Porém, centenas de envelopes começam a chover pela lareira, voando pelo ar. Harry tenta pegar um, mas o tio o impede à força, arrastando-o para fora da sala.</p>
+        
+        <p>Decidido a fugir das cartas, Vernon obriga a família a sair de casa. Eles passam a noite em hotéis e, por fim, dirigem até um local isolado, chegando a um chalé velho no meio do mar, acessível apenas por barco.</p>
+        
+        <p>No chalé, o clima é frio e desconfortável. Vernon dorme satisfeito, acreditando que finalmente despistou o remetente misterioso. Harry, deitado no chão, fica imaginando quem poderia estar enviando aquelas cartas e por quê.</p>
+        
+        <p>À meia-noite, enquanto o vento uiva e a maré bate contra as paredes, batidas fortes ecoam na porta. Algo ou alguém está chegando, e Harry sente que está prestes a descobrir a verdade que os tios esconderam por toda a sua vida.</p>
+        
+        <div class="page-number">Capítulo 4 – O Guardião das Chaves</div>
+        
+        <p>Hagrid entrega a carta diretamente para Harry, que finalmente descobre seu conteúdo: ele foi aceito para estudar na Escola de Magia e Bruxaria de Hogwarts. A carta confirma o que os tios sempre esconderam — Harry é um bruxo.</p>
+        
+        <p>Hagrid se irrita ao saber que Harry nunca foi informado sobre seus pais. Ele revela que Lílian e Tiago Potter foram bruxos famosos, mortos por Lord Voldemort, e que Harry sobreviveu ao feitiço mortal, deixando apenas a cicatriz na testa.</p>
+        
+        <p>Harry fica chocado ao ouvir o nome Voldemort pela primeira vez. Hagrid explica que o vilão perdeu todo o seu poder ao tentar matá-lo e desapareceu, e que no mundo bruxo Harry é conhecido como “O Menino que Sobreviveu”.</p>
+        
+        <p>Vernon e Petúnia tentam impedir a conversa, mas Hagrid os silencia com firmeza. Petúnia, tomada pela raiva, revela seu desprezo pela irmã Lílian, acusando-a de ser “anormal” e rejeitando qualquer ligação com o mundo mágico.</p>
+        
+        <p>Para irritar Vernon, Hagrid usa magia para dar a Duda um rabo de porco, já que o menino tentava roubar as comidas que ele trouxe. Isso assusta a todos e faz Vernon perceber que não pode fazer nada contra um bruxo.</p>
+        
+        <p>Harry, confuso, sente uma mistura de medo e excitação. Pela primeira vez, ele ouve falar de Hogwarts e descobre que terá um lugar onde poderá aprender mais sobre quem é e sobre seus pais.</p>
+        
+        <p>Hagrid decide levar Harry imediatamente para comprar seu material escolar, começando uma jornada que mudará completamente sua vida e o levará para um mundo que ele nunca imaginou existir.</p>
+        
+       <div class="page-number">Capítulo 5 – O Beco Diagonal</div>
+        </h2>
+        <p>Hagrid leva Harry a Londres e revela a entrada para o Beco Diagonal, um local escondido onde bruxos compram tudo o que precisam. O caminho é acessado batendo-se em tijolos específicos atrás de um pub chamado Caldeirão Furado.
+        </p>
+        
+        <p>Ao entrar no Beco Diagonal, Harry fica maravilhado com as lojas mágicas: caldeirões, vassouras, corujas, livros de feitiços e muito mais. Hagrid o conduz até o Banco Gringotes, administrado por duendes, para sacar o dinheiro deixado por seus pais.
+        </p>
+        
+        <p>Hagrid também pega um pacote misterioso em um cofre secreto de Hogwarts, mas não explica para Harry o que há dentro. Apenas diz que é “assunto de Dumbledore”.
+        </p>
+        
+        <p>Depois de sacar galeões, sicles e nuques, eles visitam várias lojas. Harry compra suas vestes escolares e livros, conhecendo mais sobre a cultura bruxa e percebendo que ele é reconhecido e cumprimentado por muitos.
+        </p>
+        
+        <p>Em uma loja de varinhas chamada Olivaras, Harry descobre que a varinha o “escolhe”. A que combina com ele possui um núcleo de pena de fênix, exatamente igual à que Voldemort usou para tentar matá-lo.
+        </p>
+        
+        <p>O Sr. Olivaras explica que as duas varinhas estão ligadas pelo núcleo, e isso parece significativo para o destino de Harry. Ele sai da loja intrigado, carregando seu primeiro instrumento mágico.</p>
+        
+        
+        <p>Durante o passeio, Hagrid fala mais sobre Hogwarts, as casas da escola e alguns professores, deixando Harry ansioso para começar. Harry também compra sua primeira coruja, a qual chama de Edwiges.
+        </p>
+        <p>Com todos os materiais prontos, Hagrid se despede, deixando Harry com o bilhete para embarcar no Expresso de Hogwarts. O garoto volta para a casa dos Dursley por alguns dias, mas agora com a certeza de que seu futuro será muito diferente.
+        </p>
+        <h2>Capítulo 6 – A Partida da Plataforma Nove e Meia</h2>
+        
+        <p>No dia da viagem para Hogwarts, Harry segue as instruções do bilhete, que manda embarcar no Expresso de Hogwarts às 11h, na Estação King’s Cross. Porém, ele se depara com um problema: a plataforma indicada é “9¾”, algo que ele nunca viu antes.
+        </p>
+        <p>Enquanto tenta entender, ele ouve uma família ruiva conversando sobre “Hogwarts” e decide segui-los. Essa é a família Weasley, composta pela Sra. Molly e seus filhos. Ela percebe que Harry está perdido e ensina como atravessar a barreira mágica entre as plataformas 9 e 10.
+        </p>
+        
+        <p>Harry atravessa a barreira e chega à plataforma escondida, onde o Expresso de Hogwarts está esperando, um trem vermelho e imponente, com fumaça saindo da chaminé. Ele se despede da Sra. Weasley e embarca.
+        </p>
+        
+        <p>Dentro do trem, Harry encontra Rony Weasley, um garoto simpático mas com roupas gastas e ar tímido. Eles rapidamente fazem amizade, conversando sobre suas famílias e sobre o mundo mágico.
+        </p>
+        
+        <p>No vagão, uma bruxa passa vendendo doces, e Harry compra de tudo, oferecendo para Rony. Eles provam sapos de chocolate, feijõezinhos de todos os sabores e outras guloseimas mágicas.
+        </p>
+        
+        <p>Durante a viagem, Draco Malfoy aparece acompanhado de dois garotos grandes, Crabbe e Goyle. Ele tenta fazer amizade com Harry, mas ao desprezar Rony, Harry recusa sua oferta. Isso cria uma rivalidade imediata.
+        </p>
+        
+        <p>O clima esquenta quando Goyle tenta roubar doces de Harry e Edwiges o morde. Draco recua, irritado, e deixa o vagão. Harry e Rony voltam a conversar e a rir da situação.
+        </p>
+        <p>Enquanto o trem se aproxima de Hogwarts, o céu escurece e as lanternas são acesas. Ao chegarem, os alunos são recebidos por Hagrid, que os conduz em pequenos barcos até o castelo iluminado, uma visão mágica e inesquecível.
+        </p>
+        <div class="page-number">Capítulo 7 – O Chapéu Seletor</div>
+        
+        <p>Os calouros entram no Salão Principal de Hogwarts, com seu teto encantado que imita o céu estrelado. Lá, encontram quatro mesas longas representando as casas da escola: Grifinória, Sonserina, Corvinal e Lufa-Lufa.
+        </p>
+        
+        <p>A professora Minerva McGonagall explica que cada aluno será escolhido para uma das casas pelo Chapéu Seletor, um velho chapéu mágico que consegue ler a mente.
+        </p>
+        
+        <p>Um a um, os alunos são chamados. Hermione Granger vai para Grifinória, Draco Malfoy para Sonserina, e outros seguem para suas respectivas casas. A tensão cresce conforme o nome de Harry se aproxima.
+        </p>
+        
+        <p>Quando Harry coloca o chapéu, ele ouve uma voz em sua cabeça. O Chapéu comenta que ele seria ótimo na Sonserina, mas Harry implora para não ser mandado para lá.
+        </p>
+        
+        <p>Respeitando seu pedido, o Chapéu o coloca na Grifinória, para alegria de Rony e Hermione. A mesa da Grifinória comemora com entusiasmo a chegada do novo aluno famoso.
+        </p>
+        
+        <p>Harry começa a conhecer melhor a rotina escolar. A comida aparece magicamente na mesa, e o banquete de boas-vindas impressiona todos.
+        </p>
+        
+        <p>Enquanto jantam, Harry observa os professores e percebe que um deles, Severo Snape, está olhando para ele de forma intensa e estranha.
+        </p>
+        
+        <p>Após o jantar, os alunos são levados aos dormitórios de suas casas. Harry, ainda maravilhado com tudo, adormece pensando no quanto sua vida mudou em poucos dias.
+        </p>
+        <div class="page-number">Capítulo 8 – O Professor de Poções</div>
+        
+        <p>A vida escolar começa com uma série de aulas mágicas: Transfiguração, Feitiços, Herbologia, História da Magia e Defesa Contra as Artes das Trevas. Harry se adapta bem, mas nota que algumas matérias são mais difíceis que outras.
+        </p>
+        
+        <p>Em sua primeira aula de Poções, Harry conhece melhor o professor Snape, que imediatamente demonstra antipatia por ele, fazendo perguntas difíceis e tratando-o com desprezo.
+        </p>
+        <p>Snape parece ter prazer em humilhar Harry, especialmente quando o garoto não sabe responder às perguntas. Isso aumenta a desconfiança de Harry em relação ao professor.
+        </p>
+        
+        <p>Durante as aulas, Harry percebe que Snape favorece alunos da Sonserina e é particularmente duro com os da Grifinória.
+        </p>
+        
+        <p>No intervalo, Harry comenta com Rony sobre a atitude de Snape, e ambos começam a imaginar se ele não guarda algum rancor antigo contra os Potter.
+        </p>
+        
+        <p>Além das aulas, Harry se impressiona com a biblioteca de Hogwarts, cheia de livros sobre magia, criaturas e feitiços poderosos.</p>
+        
+        
+        <p>Ele também começa a se familiarizar com os corredores e escadas que mudam de lugar, percebendo que Hogwarts é cheia de segredos e passagens escondidas.
+        </p>
+        
+        <p>Harry decide que vai ficar atento a Snape, pois sente que o professor está escondendo algo — e que essa história ainda vai se desenrolar.
+        </p>
+        <div class="page-number">Capítulo 9 – O Duelo à Meia-Noite</div>
+        
+        <p>Harry e Draco continuam trocando provocações. Um dia, Malfoy o desafia para um duelo de bruxos à meia-noite, no Salão Principal. Harry aceita, mesmo sem saber exatamente como funcionam os duelos.
+        </p>
+        
+        <p>Rony decide ir junto para ajudar, e Hermione, indignada, tenta impedir, mas acaba indo também para evitar que se metessem em encrenca.
+        </p>
+        
+        <p>Na hora marcada, eles vão até o local combinado, mas Draco não aparece. Em vez disso, aparece o zelador Filch, que começa a persegui-los.
+        </p>
+        
+        <p>Tentando escapar, eles acabam entrando em um corredor proibido e se deparam com uma porta trancada. Ao abri-la, encontram um enorme cão de três cabeças.
+        </p>
+        
+        <p>O animal rosna ferozmente, e o trio foge apavorado, conseguindo escapar por pouco. Hermione, furiosa, acusa Harry de imprudência.
+        </p>
+        <p>Mais tarde, eles comentam sobre o que viram. Percebem que o cão estava guardando algo sob uma porta no chão.</p>
+        
+        
+        <p>Harry fica intrigado e começa a se perguntar o que poderia ser tão importante para estar protegido por uma criatura tão perigosa.</p>
+        
+        
+        <p>Esse mistério marca o início de uma nova investigação para o trio, que começa a observar mais atentamente o comportamento dos professores.
+        </p>
+        <div class="page-number">Capítulo 10 – O Dia das Bruxas</div>
+        
+        <p>O clima em Hogwarts muda com a aproximação do Dia das Bruxas. O Salão Principal é decorado com abóboras encantadas, morcegos e velas flutuantes.
+        </p>
+        <p>Durante o banquete, o professor Quirrell entra correndo, pálido e apavorado, gritando que há um trasgo nas masmorras.</p>
+        
+        
+        <p>Enquanto os professores tentam controlar os alunos, Harry e Rony se lembram de que Hermione está sozinha no banheiro e não sabe do perigo.
+        </p>
+        
+        <p>Eles correm para avisá-la, mas acabam ficando presos no mesmo banheiro que o trasgo, uma criatura enorme e fedorenta armada com um porrete.
+        </p>
+        
+        <p>Com improviso e coragem, Harry e Rony distraem o trasgo. Harry pula nas costas da criatura e tenta controlar sua arma, enquanto Rony lança um feitiço para derrubar o porrete.</p>
+        
+        
+        <p>O trasgo é derrotado, mas o banheiro fica destruído. Hermione, tocada pelo gesto dos meninos, mente para proteger Harry e Rony, dizendo aos professores que foi ela quem procurou o trasgo.
+        </p>
+        <p>Esse ato cria um laço de amizade entre os três, que até então não se davam tão bem. A partir daí, eles passam a ser inseparáveis.
+        </p>
+        
+        <p>Harry percebe que agora tem amigos de verdade pela primeira vez na vida, e sente que, juntos, poderão enfrentar qualquer desafio que surgir em Hogwarts.
+        </p>
+        <div class="page-number">Capítulo 11 – Quadribol</div>
+        
+        <p>Harry recebe a notícia de que foi escolhido como apanhador do time de Quadribol da Grifinória, o jogador mais jovem em um século. Ele começa os treinos com o capitão Olívio Wood, aprendendo as regras e a função de capturar o pomo de ouro.
+        </p>
+        <p>Durante os treinos, Harry se mostra talentoso e rápido. Hermione e Rony passam a frequentar as arquibancadas para apoiá-lo, mesmo sem entender totalmente o jogo no início.
+        </p>
+        
+        <p>Chega o dia de sua primeira partida contra a Sonserina. O clima no estádio é eletrizante, com torcidas vibrando e bandeiras coloridas. Harry está nervoso, mas determinado.
+        </p>
+        
+        <p>No meio do jogo, sua vassoura começa a se comportar de forma estranha, sacudindo violentamente. Hermione percebe que Snape está olhando fixamente para Harry, murmurando algo, e suspeita que ele esteja enfeitiçando a vassoura.
+        </p>
+        <p>Agindo rápido, Hermione corre até a tribuna, derruba Quirrell sem querer no caminho e provoca uma distração em Snape, que para de murmurar. A vassoura de Harry volta ao normal.
+        </p>
+        <p>Harry retoma o controle e, com uma manobra ousada, mergulha e captura o pomo de ouro, garantindo a vitória da Grifinória. A torcida explode em comemoração.</p>
+        
+        
+        <p>Depois do jogo, o trio comenta o que aconteceu e reforça a teoria de que Snape está tentando roubar o objeto guardado pelo cão de três cabeças.</p>
+        
+        
+        <p>Harry começa a se dar conta de que sua vida em Hogwarts não será apenas estudar e jogar Quadribol — existe um mistério perigoso à espreita.</p>
+        
+        <div class="page-number">Capítulo 12 – O Espelho de Ojesed</div>
+        
+        <P>Com o Natal se aproximando, Hogwarts fica coberta de neve e decorada com árvores e guirlandas mágicas. Muitos alunos voltam para casa, mas Harry e Rony permanecem no castelo.</P>
+        
+        
+        <P>Harry recebe seu primeiro presente de Natal desde que se lembra: uma capa da invisibilidade, enviada anonimamente, acompanhada de um bilhete dizendo que pertenceu ao seu pai.</P>
+        
+        
+        <P>
+        Explorando o castelo com a capa, Harry encontra uma sala vazia onde há um espelho alto e ornamentado. Ao olhar para ele, vê seus pais e outros parentes, sorrindo e acenando.
+        
+        </P>
+        
+        <P>Emocionado, Harry passa horas voltando à sala para ficar diante do espelho, sentindo-se próximo de sua família.</P>
+        
+        
+        <P>
+        Rony também vê algo diferente no espelho: ele mesmo como monitor-chefe e campeão de Quadribol, mostrando que o objeto reflete desejos pessoais.
+        
+        </P>
+        
+        <P>
+        Dumbledore encontra Harry diante do espelho e explica que ele se chama Espelho de Ojesed, que mostra o desejo mais profundo do coração, mas não a realidade ou o futuro.
+        
+        </P>
+        
+        <P>
+        Ele aconselha Harry a não procurar mais o espelho, pois viver preso a sonhos pode afastar uma pessoa da vida real.
+        
+        </P>
+        
+        <P>Mesmo sentindo falta de ver seus pais, Harry decide seguir o conselho e evita retornar ao espelho, guardando a experiência como algo precioso.</P>
+        
+        <div class="page-number">Capítulo 13 – Nicolau Flamel</div>
+        
+        <P>O trio continua investigando o que o cão de três cabeças guarda. Hermione lembra que já ouviu falar de Nicolau Flamel, mas não consegue encontrar nada sobre ele nos livros comuns.</P>
+        
+        
+        <p>Eles descobrem a resposta por acaso, quando Harry lê um cartão de sapo de chocolate e vê que Flamel é um alquimista famoso e amigo de Dumbledore.</p>
+        
+        <p>Flamel é o único criador conhecido da Pedra Filosofal, um artefato capaz de transformar qualquer metal em ouro e produzir o Elixir da Vida, que garante imortalidade.</p>
+        
+        
+        <p>O trio conclui que a pedra é o objeto escondido em Hogwarts e que Snape quer roubá-la para entregar a Voldemort.</p>
+        
+        
+        <p>Enquanto isso, a temporada de Quadribol continua, e Harry se prepara para o próximo jogo contra a Lufa-Lufa.</p>
+        
+        <p>Hagrid, em uma conversa, deixa escapar que o cão gigante se chama Fofo e que existem outros encantos além dele protegendo a pedra.</p>
+        
+        <p>O trio percebe que cada professor responsável por Hogwarts contribuiu com um feitiço para proteger o artefato.</p>
+        
+        <p>A suspeita contra Snape aumenta, e Harry se convence de que precisam agir antes que ele consiga vencer as proteções.</p>
+        
+        <div class="page-number">Capítulo 14 – Norberto, o Dragão Norueguês</div>
+        <p>Hagrid aparece misterioso e animado, revelando que ganhou um ovo de dragão em um jogo de cartas. Ele o guarda em sua cabana e o trata como um tesouro.</p>
+        
+        <p>O trio tenta alertá-lo que criar um dragão é ilegal, mas Hagrid insiste que dará conta.</p>
+        
+        <p>O ovo choca e de dentro sai um dragãozinho, que Hagrid chama de Norberto. Ele é agressivo, mesmo filhote, e cresce rapidamente.</p>
+        
+        <p>O cheiro e o barulho do dragão começam a chamar atenção, e Malfoy descobre o segredo, ameaçando contar para todos.</p>
+        
+        
+        <p>Hermione sugere enviar Norberto para o irmão de Rony, que trabalha com dragões na Romênia.</p>
+        
+        
+        <p>O transporte é feito de forma clandestina, à noite, com Harry e Hermione levando o dragão até a torre mais alta para ser resgatado.</p>
+        
+        
+        <p>Ao retornarem, eles são pegos por Filch e recebem detenção, junto com Neville, que tentava alertá-los sobre Malfoy.</p>
+        
+        
+        <p>O episódio deixa o trio preocupado com o quanto Malfoy pode atrapalhar e acelerar os planos de quem deseja a pedra.</p>
+        
+        <div class="page-number">Capítulo 15 – A Floresta Proibida</div>
+        
+        <p>Como punição, Harry, Hermione, Neville e Malfoy são enviados com Hagrid para a Floresta Proibida à noite, uma tarefa perigosa e assustadora.</p>
+        
+        
+        <p>O objetivo é encontrar um unicórnio ferido. Hagrid os divide em duplas para procurar rastros.</p>
+        
+        
+        <p>Harry e Draco, andando juntos, encontram uma figura encapuzada bebendo o sangue do unicórnio morto. Draco grita de medo e foge.</p>
+        
+        
+        <p>A figura se volta para Harry, que sente uma dor intensa na cicatriz. Antes que algo pior aconteça, o centauro Firenze aparece e o salva.</p>
+        
+        <p>Firenze explica que beber sangue de unicórnio mantém a pessoa viva mesmo à beira da morte, mas condena o bebedor a uma vida amaldiçoada.</p>
+        
+        
+        <p>Ele insinua que a criatura na floresta é Voldemort, tentando recuperar forças antes de obter a Pedra Filosofal.</p>
+        
+        
+        <p>Harry volta para o castelo perturbado, sentindo que o perigo é maior do que imaginava.</p>
+        
+        
+        <p>A convicção de que precisam proteger a pedra cresce, e o trio começa a planejar como agir antes que Voldemort se recupere.</p>
+        
+        <div class="page-number">Capítulo 16 – Através da Porta Trancada</div>
+        
+        <p>Harry descobre que Hagrid revelou a um estranho como acalmar Fofo, o cão de três cabeças, em troca do ovo de dragão. Isso significa que o ladrão sabe passar pela primeira barreira.</p>
+        
+        
+        <p>Temendo que a pedra seja roubada, o trio decide agir naquela mesma noite, passando pelas proteções antes que Snape (ou Voldemort) consiga.</p>
+        
+        
+        <p>Eles colocam o plano em prática e atravessam a porta guardada por Fofo, tocando uma música para fazê-lo dormir.</p>
+        
+        
+        <p>Cada desafio seguinte é obra de um professor: plantas que tentam agarrá-los (Herbologia), um enxame de chaves voadoras (Feitiços), um jogo de xadrez gigante (Transfiguração), um trasgo já derrotado (Defesa Contra as Artes das Trevas) e um enigma de poções (Poções).</p>
+        
+        
+        <p>Hermione resolve o enigma das poções, permitindo que Harry siga sozinho, pois apenas uma poção leva à sala final.</p>
+        
+        
+        <p>Rony fica inconsciente após o jogo de xadrez, e Hermione permanece para cuidar dele.</p>
+        
+        
+        <p>Harry atravessa a última porta, determinado a impedir o ladrão de alcançar a pedra.</p>
+        
+        
+        <p>Ele não encontra Snape, mas o professor Quirrell, revelando que a suspeita deles estava errada.</p>
+        
+        <div class="page-number">Capítulo 17 – O Homem de Duas Caras</div>
+        
+        <p>Quirrell confessa que trabalha para Voldemort e que fingia ser fraco para enganar todos. Ele explica que foi ele quem tentou matar Harry no Quadribol, não Snape.</p>
+        
+        
+        <p>Voldemort está preso ao corpo de Quirrell, vivendo como uma forma sem corpo físico. Quando Quirrell remove o turbante, Harry vê o rosto pálido e deformado de Voldemort na parte de trás de sua cabeça.</p>
+        
+        
+        <p>A Pedra Filosofal aparece no bolso de Harry, pois o Espelho de Ojesed a entregou a quem quisesse encontrá-la, mas não usá-la para benefício próprio — um encantamento de Dumbledore.</p>
+        
+        
+        <p>Voldemort ordena que Quirrell mate Harry e pegue a pedra. Quando Quirrell tenta tocá-lo, sua pele queima e se desfaz.</p>
+        
+        
+        <p>
+        Harry percebe que o toque destrói Quirrell e luta até perder a consciência.
+        
+        </p>
+        
+        <p>Ele acorda na enfermaria, onde Dumbledore explica que o amor de sua mãe deixou nele uma proteção mágica que Voldemort não pode tocar.</p>
+        
+        
+        <p>Dumbledore também revela que a pedra foi destruída por Flamel e que Voldemort fugiu novamente, mas ainda está vivo de alguma forma.</p>
+        
+        
+        <p>O ano termina com a Grifinória vencendo a Taça das Casas, e Harry volta para os Dursley sabendo que sua vida mudou para sempre — e que essa foi apenasa primeira de muitas aventuras.</p>
+    </div>
+
+</body>
+</html>

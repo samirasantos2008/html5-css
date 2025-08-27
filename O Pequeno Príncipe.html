@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca online</title>
+    <link rel="shortcut icon" href="img icon.png" type="image/x-icon">
+    <style>
+body {
+  background-color: #d8cfc0; /* fundo tipo mesa de leitura */
+  font-family: 'Garamond', 'Georgia', serif;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.book-page {
+  width: 780px;
+  background-color: #c0a56e; /* cor de papel antigo */
+  padding: 50px 70px;
+  margin: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.25), inset 0 0 20px rgba(0,0,0,0.05);
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  line-height: 1.9;
+  border-top: 8px solid #a17a35; /* linha decorativa superior */
+  border-bottom: 8px solid #83755e; /* linha decorativa inferior */
+}
+
+.book-page::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: repeating-linear-gradient(
+    rgba(0,0,0,0.02) 0px, rgba(0,0,0,0.02) 1px,
+    transparent 1px, transparent 20px
+  ); /* linhas leves tipo página de caderno antigo */
+  pointer-events: none;
+}
+
+.book-page h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  letter-spacing: 1px;
+  color: #5a3e36;
+}
+
+.book-page h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-style: italic;
+  color: #6a4f42;
+}
+
+.book-page p {
+  text-indent: 45px;
+  margin-bottom: 18px;
+  text-align: justify;
+  color: #3b2f2f;
+}
+
+.book-page .chapter-separator {
+  height: 2px;
+  background-color: #d9c9b8;
+  margin: 30px 0;
+}
+
+.page-number {
+  text-align: center;
+  font-size: 14px;
+  color: #a1866f;
+  margin-top: 35px;
+  letter-spacing: 1px;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .book-page {
+    width: 95%;
+    padding: 30px 20px;
+  }
+  .book-page p {
+    text-indent: 30px;
+  }
+}
+</style>
+</head>
+<body>
+    <div class="book-page">
+        <h1>O Pequeno Príncipe </h1>
+        <h2>Capitulo 1</h2>
+        
+        <p>A história começa com o narrador relembrando sua infância e sua tentativa frustrada de desenhar uma jiboia que engoliu um elefante. Ele explica que os adultos não entendem os desenhos feitos por crianças, pois sempre interpretam as coisas de forma literal e prática. Por isso, ele desistiu de seguir sua vocação artística e tornou-se piloto.</p>
+        
+        
+        <p>Durante uma viagem de avião pelo deserto do Saara, o narrador sofre uma pane e é forçado a fazer um pouso de emergência. Sozinho e sem ajuda, ele se prepara para reparar o avião quando é surpreendido pela chegada de um menino estranho, o Pequeno Príncipe, que lhe pede um desenho de carneiro.</p>
+        
+        
+        <p>O narrador tenta desenhar o que o Pequeno Príncipe pede, mas o menino rejeita vários desenhos, até que o narrador faz um simples desenho de uma caixa com um buraco, dizendo que o carneiro está dentro dela. O Pequeno Príncipe fica satisfeito e revela que o que ele quer é algo que a imaginação pode completar.</p>
+        
+        
+        <p>A partir daí, o narrador e o Pequeno Príncipe iniciam uma conversa que vai revelar muito sobre a infância, a visão dos adultos, a importância da imaginação e a pureza das crianças. O menino começa a contar sobre seu planeta de origem, um pequeno asteroide chamado B-612.</p>
+        
+        
+        <p>O Pequeno Príncipe fala sobre sua rotina no planeta, os vulcões que cuida, a flor vaidosa e delicada que habita lá e que ele ama profundamente, apesar de suas contradições. O narrador começa a compreender que há uma mensagem importante e profunda por trás das palavras daquele pequeno visitante.</p>
+        
+        <h2>Capitulo 2</h2>
+        
+        <p>O Pequeno Príncipe conta que, apesar de seu pequeno planeta, ele tem uma vida cheia de responsabilidades. Ele fala sobre os três vulcões que cuida — dois ativos e um extinto — e como os limpa todos os dias para evitar que causem problemas. Esse cuidado demonstra seu sentido de responsabilidade e amor pelo seu lar, mesmo sendo tão pequeno.</p>
+        
+        
+        <p>Além dos vulcões, o príncipe fala da sua flor, uma rosa única que cresceu em seu planeta. Ela é muito vaidosa e orgulhosa, exigindo cuidados constantes, o que às vezes o deixa confuso e magoado. No entanto, ele a ama intensamente e sente saudades dela, o que mostra a complexidade dos sentimentos e das relações.</p>
+        
+        <p>O príncipe explica que decidiu deixar seu planeta porque, apesar de amar sua flor, sentia que ela era exigente e, às vezes, um pouco falsa. Ele sentia a necessidade de explorar o universo e aprender mais, buscando compreender a si mesmo e o mundo. Assim, ele embarcou em uma jornada por outros planetas.</p>
+        
+        
+        <p>Durante suas viagens, o Pequeno Príncipe visita vários asteroides, onde encontra personagens que representam diferentes tipos de adultos e seus vícios — um rei sem súditos, um vaidoso que só quer aplausos, um bêbado que bebe para esquecer a vergonha de beber, um homem de negócios obcecado por contar estrelas e um acendedor de lampiões preso à rotina.</p>
+        
+        <p>Cada encontro revela críticas sutis de Saint-Exupéry ao comportamento adulto, que muitas vezes é irracional, solitário ou vazio. O Pequeno Príncipe observa com uma inocência e sabedoria que expõem as falhas e a superficialidade do mundo dos adultos, reforçando a mensagem central do livro sobre a importância de preservar o olhar puro e sensível da infância.</p>
+        
+         <h2>Capitulo 3</h2>
+        
+        <p>Após deixar seu planeta, o Pequeno Príncipe visita o primeiro asteroide, onde encontra um rei solitário. O rei governa sobre tudo e todos, mas não há ninguém para obedecê-lo. O rei tenta impor ordens que façam sentido, mas percebe que seu poder é ilusório, pois ele é rei apenas de si mesmo.</p>
+        
+        <p>No segundo planeta, ele conhece um vaidoso que deseja ser admirado e aplaudido o tempo todo. O vaidoso quer apenas elogios e não percebe que sua busca por reconhecimento é vazia e triste, destacando a futilidade do orgulho mal colocado.</p>
+        
+        
+        <p>No terceiro planeta, o Pequeno Príncipe encontra um bêbado que bebe para esquecer a vergonha de beber, um ciclo sem fim que demonstra como algumas pessoas se perdem em comportamentos autodestrutivos.</p>
+        
+        
+        <p>No quarto asteroide, o príncipe vê um homem de negócios que passa o tempo contando estrelas, acreditando que as possui, simbolizando a obsessão pelo dinheiro e pela posse material. O homem de negócios é incapaz de desfrutar a beleza das estrelas e vive apenas para acumular.</p>
+        
+        
+        <p>No quinto planeta, o Pequeno Príncipe conhece um acendedor de lampiões que obedece ordens rígidas de acender e apagar o lampião sem descanso, mesmo que seu planeta gire cada vez mais rápido. Essa figura representa a alienação pela rotina e a perda do sentido no trabalho mecânico.</p>
+        
+        <h2>Capitulo 4</h2>
+        
+        <p>No sexto planeta, ele encontra um geógrafo, um estudioso que não sai de seu escritório para explorar. Ele registra o que outros dizem, sem conhecer verdadeiramente o que estuda, simbolizando o saber teórico sem experiência.</p>
+        
+        
+        <p>O Pequeno Príncipe percebe que, para entender o mundo, é preciso sair e vivê-lo, não apenas ler sobre ele ou acumulá-lo passivamente. Isso é uma crítica à distância entre teoria e prática.</p>
+        
+        
+        <p>Finalmente, ele chega à Terra, um planeta muito maior e mais complexo. Logo ao chegar, ele se perde em um vasto deserto e sente a solidão e o mistério que o planeta traz.</p>
+        
+        
+        <p>No deserto, ele encontra uma serpente que fala em enigmas, prometendo um poder perigoso e fascinante. A serpente simboliza a morte e o mistério do fim da vida.</p>
+        
+        
+        <p>A jornada do Pequeno Príncipe pela Terra é marcada por encontros que vão revelar mais sobre a natureza humana e os valores que o autor deseja destacar.</p>
+        
+        <h2>Capitulo 5</h2>
+        
+        <p>Ele encontra uma flor que fala sobre as multidões, indicando que no meio de tanta gente ele se sente invisível, uma metáfora para a solidão e a busca por conexão verdadeira.</p>
+        
+        
+        <p>Depois, o príncipe encontra um jardim cheio de rosas, o que o entristece, pois ele pensava que sua rosa era única no universo. Ele começa a questionar o valor de sua flor.</p>
+        
+        
+        <p>O encontro com as rosas o faz refletir sobre o amor e a singularidade dos sentimentos, entendendo que o que torna algo especial é o cuidado e o tempo dedicado.</p>
+        
+        <p>Mais adiante, ele encontra uma raposa que lhe pede para ser cativada, ensinando-lhe o significado da amizade, da confiança e da responsabilidade. A raposa explica que só se vê bem com o coração, pois o essencial é invisível aos olhos.</p>
+        
+        
+        <p>Esse ensinamento transforma o Pequeno Príncipe, dando-lhe uma nova compreensão da vida e do valor dos laços afetivos, que ultrapassam a aparência e a superficialidade.</p>
+        
+        <h2>Capitulo 6</h2> 
+        
+        <p>O Pequeno Príncipe se despede da raposa, que lhe revela um segredo precioso: “Tu te tornas eternamente responsável por aquilo que cativas.” Essa frase resume o tema central do livro sobre compromisso e amor.</p>
+        
+        <p>O príncipe prossegue em sua jornada e encontra o narrador no deserto, e os dois começam uma amizade profunda, baseada na troca de histórias e na descoberta do mundo do outro.</p>
+        
+        
+        <p>O narrador aprende a ver o mundo com os olhos da criança e a valorizar as coisas simples, como a amizade, a imaginação e a beleza das pequenas coisas.</p>
+        
+        
+        <p>Juntos, eles enfrentam dificuldades e momentos de reflexão sobre a vida, o amor e a solidão, em uma atmosfera de ternura e poesia.</p>
+        
+        
+        <p>O Pequeno Príncipe compartilha com o narrador suas saudades e desejos de voltar para seu planeta e sua rosa, reforçando a importância do afeto e do lar.</p>
+        
+        <h2>Capitulo 7</h2>
+        
+        <p>Enquanto o narrador trabalha para consertar seu avião, o Pequeno Príncipe fala sobre a beleza das estrelas e como elas simbolizam sonhos e esperanças.</p>
+        
+        
+        <p>Eles conversam sobre o significado do amor e da amizade, e o príncipe explica que o tempo que dedicamos a alguém é o que torna essa pessoa especial.</p>
+        
+        
+        <p>O narrador conta que sente falta de seu próprio planeta interior, e ambos refletem sobre a necessidade de manter a criança dentro de si, mesmo na vida adulta.</p>
+        
+        
+        <p>Em um momento de tristeza, o Pequeno Príncipe fala da importância da simplicidade e da honestidade para enxergar a essência da vida.</p>
+        
+        
+        <p>Eles se preparam para o adeus, sabendo que suas vidas nunca mais serão as mesmas após esse encontro.</p>
+        
+        <h2>Capitulo 8</h2>
+        
+        <p>O Pequeno Príncipe decide retornar ao seu planeta, sentindo que é hora de cuidar de sua rosa e de seu lar.</p>
+        
+        
+        <p>Para isso, ele combina com a serpente uma despedida que tem um significado ambíguo, misturando mistério, dor e esperança.</p>
+        
+        
+        <p>O narrador observa, emocionado, a partida do amigo, compreendendo a profundidade do vínculo que os uniu.</p>
+        
+        
+        <p>Ele sente a ausência do Pequeno Príncipe, mas também a presença eterna dos ensinamentos e da amizade.</p>
+        
+        
+        <p>A história termina com uma reflexão sobre o que é verdadeiramente importante na vida, convidando o leitor a ver além das aparências.</p>
+        
+        
+        
+        
+        <h2>Capitulo 9</h2>
+        
+        <p>O Pequeno Príncipe explica que, para ele, o verdadeiro valor está nas coisas invisíveis, como a amizade e o amor, que não se podem ver com os olhos, mas sentem-se com o coração.</p>
+        
+        <p>Ele fala da importância de criar laços, porque é isso que torna as pessoas e coisas únicas no mundo. Sem laços, tudo seria apenas mais uma coisa entre muitas.</p>
+        
+        
+        <p>O narrador percebe que o Pequeno Príncipe é um mestre em ver o que os adultos não conseguem — a essência das coisas — e se sente inspirado a aprender com ele.</p>
+        
+        
+        <p>Eles discutem o valor da infância e como o crescimento muitas vezes faz as pessoas esquecerem o que realmente importa, tornando-as superficiais e materialistas.</p>
+        
+        
+        <p>O Pequeno Príncipe reforça que manter a pureza e a curiosidade da infância é fundamental para uma vida plena e feliz.</p>
+        
+        <h2>Capitulo 10</h2>
+        
+        <p>No final, o Pequeno Príncipe aceita seu destino com coragem e serenidade, sabendo que seu retorno ao planeta trará paz para sua rosa e para ele mesmo.</p>
+        
+        
+        <p>O narrador, embora triste, entende que a despedida faz parte da vida e que as verdadeiras conexões transcendem o tempo e o espaço.</p>
+        
+        <p>Ele conclui com uma mensagem para os leitores: olhar para o céu e tentar encontrar o Pequeno Príncipe nas estrelas, lembrando-se da importância do amor e da amizade.</p>
+        
+        
+        <p>O livro termina com uma nota de mistério, convidando a imaginação a continuar a história e a manter vivos os valores que o Pequeno Príncipe ensinou.</p>
+        
+        <p>Assim, O Pequeno Príncipe permanece uma obra atemporal, que fala diretamente ao coração de crianças e adultos, inspirando a redescobrir o que realmente importa na vida.</p>
+    </div>
+
+</body>
+</html>

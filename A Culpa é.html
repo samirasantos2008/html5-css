@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Online</title>
+    <link rel="shortcut icon" href="img icon.png" type="image/x-icon">
+    <style>
+body {
+  background-color: #239bd3; /* tom de papel antigo claro */
+  font-family: 'Merriweather', 'Georgia', serif;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  margin: 0;
+}
+
+.book-page {
+  width: 750px;
+  background: #fffdf7; /* cor de papel claro */
+  padding: 60px 50px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  position: relative;
+  line-height: 1.85;
+  overflow: hidden;
+  border-left: 6px solid #0b648d; /* borda lateral simulando lombada */
+}
+
+.book-page::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: repeating-linear-gradient(
+    rgba(0,0,0,0.015) 0px, rgba(0,0,0,0.015) 1px,
+    transparent 1px, transparent 25px
+  ); /* linhas sutis na página */
+  pointer-events: none;
+}
+
+.book-page h1 {
+  text-align: center;
+  font-size: 30px;
+  color: #5c3a21;
+  margin-bottom: 25px;
+  letter-spacing: 1.5px;
+}
+
+.book-page h2 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: normal;
+  color: #7d5533;
+  margin-bottom: 25px;
+}
+
+.book-page p {
+  text-indent: 50px;
+  margin-bottom: 20px;
+  text-align: justify;
+  color: #4a362e;
+}
+
+.book-page .chapter-divider {
+  text-align: center;
+  font-size: 18px;
+  color: #b89a7c;
+  margin: 30px 0;
+  letter-spacing: 2px;
+}
+
+.page-number {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #a98b6c;
+  letter-spacing: 1px;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .book-page {
+    width: 90%;
+    padding: 40px 30px;
+  }
+  .book-page p {
+    text-indent: 30px;
+  }
+}
+</style>
+</head>
+<body>
+<div class="book-page">
+        <h1>A Culpa é das Estrelas</h1>
+    <h2>Capítulo 1</h2>
+    
+    <p>Hazel Grace Lancaster, uma garota de 16 anos com câncer de tireoide que se espalhou para os pulmões, vive com a ajuda de um cilindro de oxigênio.
+        Ela participa de um Grupo de Apoio para Crianças com Câncer por insistência da mãe, que acredita que ela sofre de depressão. Hazel prefere ficar em casa lendo e revendo seu livro favorito, *Uma Aflição Imperial*. No grupo, ela conhece Augustus Waters, um ex-jogador de basquete que perdeu uma perna para o osteossarcoma e está em remissão. Ele a observa atentamente durante a reunião.</p>
+    
+    <h2>Capítulo 2</h2>
+    
+    <p>Após o grupo, Augustus e Hazel conversam. Ele é carismático, irônico e fala sobre como quer deixar uma marca no mundo.
+        Hazel, mais realista, questiona essa necessidade. Eles trocam livros: Hazel promete ler *O Preço do Alvorecer*, favorito dele, e Augustus aceita ler *Uma Aflição Imperial*. Hazel começa a sentir uma conexão, mas tenta manter distância emocional.</p>
+    
+    <h2>Capítulo 3</h2>
+    
+    <p>Hazel lê *O Preço do Alvorecer* e se interessa pela narrativa de ação. Ela reflete sobre como Augustus encara a vida com otimismo.
+        Augustus lê *Uma Aflição Imperial* e fica intrigado pelo final abrupto, que deixa várias questões sem resposta. Ele quer discutir com Hazel sobre o autor, Peter Van Houten, que vive recluso na Holanda.</p>
+    
+    <h2>Capítulo 4</h2>
+    
+    <p>Eles passam mais tempo juntos, trocando mensagens e se encontrando.
+        Augustus revela que conseguiu rastrear a assistente de Van Houten e mandou um e-mail perguntando sobre o final do livro. Van Houten responde, mas diz que só pode conversar pessoalmente. Augustus começa a planejar uma viagem para Amsterdã para que Hazel tenha respostas, usando seu "desejo" de uma fundação que realiza sonhos de pacientes com câncer.</p>
+    
+    <h2>Capítulo 5</h2>
+    
+    <p>Hazel fica animada com a possibilidade da viagem, mas sua saúde é instável. Uma noite, enquanto está com Augustus,
+        ela sente uma forte falta de ar e vai parar no hospital com líquido nos pulmões. Os médicos alertam sobre os riscos de viajar. Hazel sente medo de morrer e preocupa-se com o sofrimento que pode causar aos pais.</p>
+    
+    <h2>Capítulo 6</h2>
+    
+    <p>Apesar do susto, Hazel melhora. Augustus insiste na viagem e a convence a pensar mais na experiência do que no medo.
+        Ele mostra paciência e cuidado com ela. Hazel percebe que seus sentimentos por ele estão crescendo, mas ainda teme o apego por saber que ambos têm doenças graves.</p>
+    
+    <h2>Capítulo 7</h2>
+    
+    <p>A viagem para Amsterdã é confirmada. Hazel se anima, mas também fica nervosa com o que vai descobrir.
+        Ela e Augustus trocam momentos carinhosos, cheios de provocações e humor. Augustus começa a revelar mais sobre seu medo de ser esquecido.</p>
+    
+    <h2>Capítulo 8</h2>
+    
+    <p>Em Amsterdã, eles se hospedam num hotel romântico. Augustus organiza um jantar especial à luz de velas, onde se declaram apaixonados.
+        Hazel reflete sobre como a felicidade pode existir mesmo em meio à doença. O romance entre eles se fortalece.</p>
+    
+    <h2>Capítulo 9</h2>
+    
+    <p>Chega o dia de conhecer Van Houten. Porém, o encontro é decepcionante: o escritor é grosseiro, alcoólatra e não responde às perguntas sobre o final do livro.
+        Hazel sai furiosa, sentindo-se traída. A assistente Lidewij, envergonhada, oferece levá-los para passear por Amsterdã como compensação.</p>
+    
+    <h2>Capítulo 10</h2>
+    
+    <p>Lidewij leva Hazel e Augustus para conhecer a Casa de Anne Frank. A visita é emocionante, e Hazel se sente inspirada pela força de Anne.
+        No final, no sótão, Hazel e Augustus se beijam, e o momento é aplaudido pelos turistas.</p>
+    
+    <h2>Capítulo 11</h2>
+    
+    <p>Hazel e Augustus passam a noite juntos no hotel. A intimidade física é acompanhada de um vínculo emocional profundo.
+        Hazel sente que encontrou um amor verdadeiro, mesmo que breve.</p>
+    
+    <h2>Capítulo 12</h2>
+    
+    <p>Na volta para os EUA, Augustus revela que o câncer voltou e está se espalhando rapidamente.
+        Hazel fica devastada, mas promete estar ao lado dele. A situação inverte: agora é ela quem precisa ser o suporte.</p>
+    
+    <h2>Capítulo 13</h2>
+    
+    <p>A saúde de Augustus piora. Ele começa a depender de cadeiras de rodas e cuidados constantes. Hazel o acompanha em exames e sessões médicas,
+        e o vê fragilizado, mas ainda tentando manter o humor.</p>
+    
+    <h2>Capítulo 14</h2>
+    
+    <p>Hazel descobre que Augustus escreveu algo, mas não diz o que é. Ele fala sobre ter medo de não deixar nada importante para o mundo,
+        mas ela o lembra de como ele impactou sua vida.</p>
+    
+    <h2>Capítulo 15</h2>
+    
+    <p>O grupo de apoio agora é diferente para Hazel, pois ela vê a história de Augustus como mais um lembrete da fragilidade da vida.
+        Eles passam tardes juntos relembrando Amsterdã e falando sobre *Uma Aflição Imperial*.</p>
+    
+    <h2>Capítulo 16</h2>
+    
+    <p>Augustus organiza um "pré-funeral", onde Isaac (amigo deles, que ficou cego por causa do câncer) e Hazel fazem discursos sobre ele.
+        Hazel diz que ele não é apenas uma marca no mundo, mas uma marca no coração das pessoas que o amam.</p>
+    
+    <h2>Capítulo 17</h2>
+    
+    <p>A saúde dele piora ainda mais. Augustus sofre com dores, infecções e internações frequentes. Hazel luta contra o medo de perder alguém que ama tão intensamente.</p>
+    
+    <h2>Capítulo 18</h2>
+    
+    <p>Augustus morre oito dias após sua última internação. Hazel fica em choque e sente um vazio enorme.
+        A dor é intensa, mas ela também sente gratidão pelo tempo que tiveram.</p>
+    
+    <h2>Capítulo 19</h2>
+    
+    <p>No funeral, Hazel enfrenta a hipocrisia de Van Houten, que aparece sem ser convidado.
+        Ele tenta explicar seu comportamento, dizendo que sua filha morreu de câncer e que isso o deixou amargo. Hazel o ignora.</p>
+    
+    <h2>Capítulo 20</h2>
+    
+    <p>Hazel tenta lidar com o luto e encontra forças nas memórias felizes. Ela passa mais tempo com Isaac, que compartilha histórias engraçadas sobre Augustus.</p>
+    
+    <h2>Capítulo 21</h2>
+    
+    <p>Lidewij envia para Hazel uma carta que Augustus escreveu antes de morrer. Era para Van Houten, mas fala sobre Hazel: ele descreve como ela mudou sua vida e como seu amor por ela foi profundo.</p>
+    
+    <h2>Capítulo 22</h2>
+    
+    <p>Hazel lê e relê a carta, sentindo que Augustus lhe deu não só amor, mas também uma forma de continuar vivendo.</p>
+    
+    <h2>Capítulo 23</h2>
+    
+    <p>Ela percebe que, embora o futuro seja incerto, pode encontrar beleza e significado mesmo na dor.</p>
+    
+    <h2>Capítulo 24</h2>
+    
+    <p>Hazel continua frequentando o grupo de apoio, mas agora com uma nova perspectiva: não é sobre “perder” ou “ganhar” a luta contra o câncer,
+        mas sobre viver da forma mais plena possível.</p>
+    
+    <h2>Capítulo 25</h2>
+    
+    <p>O livro termina com Hazel lembrando as palavras finais de Augustus na carta: ele não se arrepende da escolha de amá-la.
+        Ela encerra dizendo: “Eu também não me arrependo”.</p>
+    
+    <p>
+        Se você quiser, posso agora refinar esse resumo com mais diálogos e detalhes emocionais para deixar quase como uma leitura narrativa, mantendo a legalidade.
+        Quer que eu faça essa versão expandida?
+    </p>
+</div>
+
+</body>
+</html>

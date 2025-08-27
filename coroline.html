@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca online</title>
+    <link rel="shortcut icon" href="img icon.png" type="image/x-icon">
+    <style>
+body {
+  background-color: #2512cc; /* fundo escuro tipo noite */
+  font-family: 'Cursive', 'Georgia', serif; /* toque fantasioso */
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  margin: 0;
+}
+
+.book-page {
+  width: 780px;
+  background: #f4f0e6; /* cor clara de papel antigo */
+  padding: 60px 50px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+  border-radius: 20px;
+  position: relative;
+  line-height: 1.85;
+  overflow: hidden;
+  border: 4px solid #6b4f3f; /* borda escura lembrando livro antigo */
+}
+
+.book-page h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #3b2f2f;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  font-family: 'Garamond', serif;
+}
+
+.book-page h2 {
+  text-align: center;
+  font-size: 22px;
+  color: #5a4033;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.book-page p {
+  text-indent: 50px;
+  margin-bottom: 20px;
+  text-align: justify;
+  color: #3c2f2f;
+}
+
+.book-page .chapter-divider {
+  text-align: center;
+  font-size: 18px;
+  color: #8b5e3c;
+  margin: 30px 0;
+  letter-spacing: 2px;
+}
+
+.page-number {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #8b5e3c;
+  letter-spacing: 1px;
+}
+
+/* efeito de linhas sutis na página */
+.book-page::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: repeating-linear-gradient(
+    rgba(0,0,0,0.015) 0px, rgba(0,0,0,0.015) 1px,
+    transparent 1px, transparent 25px
+  );
+  pointer-events: none;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .book-page {
+    width: 90%;
+    padding: 40px 30px;
+  }
+  .book-page p {
+    text-indent: 30px;
+  }
+}
+</style>
+
+</head>
+<body>
+   <div class="book-page">
+       <h1>Coraline </h1>
+      <div class="chapter-divider">✦✦✦</div>
+       
+       <h2>Capítulo 1 – A porta misteriosa</h2>
+       <p>A chuva caía sem pressa, batendo no vidro com um som monótono. Coraline Jones estava largada no sofá, olhando pela janela e tentando imaginar alguma aventura que pudesse ter naquele dia cinza. Seus pais trabalhavam de casa, ocupados demais para brincar.</p>
+       
+       <p>A casa onde moravam era enorme e antiga, dividida em três apartamentos. No andar de cima vivia um homem que dizia treinar um coral de ratos para um grande espetáculo — Coraline nunca o viu de fato ensaiando, mas ele jurava que os ratos cantavam maravilhosamente. No térreo moravam duas senhoras idosas, a senhorita Spink e a senhorita Forcible, que passavam o dia relembrando os tempos de atrizes de teatro e tomando chá.</p>
+       
+       <p>— Vai brincar lá fora? — perguntou a mãe, sem tirar os olhos do computador.</p>
+       
+       <p>— Está chovendo… — Coraline respondeu, contrariada.</p>
+       
+       <p>Foi então que a mãe sugeriu que ela explorasse a casa. Coraline adorou a ideia. Pegou um bloco e começou a anotar tudo o que via: o carpete gasto no corredor, o armário que cheirava a mofo, e finalmente… uma porta pequena na sala de estar.</p>
+       
+       <p>— O que tem aqui? — perguntou, apontando para a porta.</p>
+       
+       <p>— Nada de especial — disse a mãe, pegando uma chave num copo de vidro.</p>
+       
+       <p>A fechadura fez um clique. Coraline segurou a maçaneta e abriu a porta…
+       Atrás dela havia apenas uma parede de tijolos frios.</p>
+       
+       <p>— Quando reformaram a casa, fecharam a passagem para o outro apartamento — explicou a mãe, trancando de novo.</p>
+       
+       <p>Mas, enquanto voltava para o sofá, Coraline teve uma sensação estranha: como se aquela porta estivesse esperando por ela.</p>
+       
+       <p>Se quiser, já continuo o Capítulo 2 na mesma pegada — com todos os detalhes e falas recriadas — até o final do livro.</p>
+       
+       <h2>Capítulo 2 – O aviso nas folhas de chá</h2>
+       <p>No dia seguinte, o tempo continuava cinzento. Coraline, decidida a investigar melhor seus vizinhos, desceu até o térreo. As senhoritas Spink e Forcible a receberam na sala abarrotada de lembranças — fotografias de palco, pôsteres antigos e prateleiras cheias de bibelôs.</p>
+       
+       <p>— Ah, a nossa pequena exploradora — disse a senhorita Spink, oferecendo uma xícara de chá.<p>
+       
+       <p>— Não estou explorando nada… ainda — respondeu Coraline, aceitando a bebida.</p>
+       
+       <p>Enquanto conversavam, a senhorita Forcible virou a xícara de Coraline de boca para baixo no pires e observou atentamente as folhas grudadas no fundo. Seu olhar ficou sério.</p>
+       
+       <p>— Hum… vejo perigo, minha querida — disse ela, franzindo a testa.</p>
+       
+       <p>— Que tipo de perigo? — Coraline se endireitou, interessada.</p>
+       
+       <p>— Algo que tenta ser algo que não é. Algo que vai querer prender você.</p>
+       
+       <p>— Besteira — a senhorita Spink interrompeu, abanando a mão. — Ela é esperta demais pra isso.</p>
+       
+       <p>Coraline sorriu, mas sentiu um friozinho no estômago. Ao sair, viu um gato preto no jardim. Ele a observava sem piscar, como se fosse mais inteligente que muitos humanos que ela conhecia.</p>
+       
+       <p>— Oi, gatinho… — disse ela.</p>
+       
+       <p>O gato apenas piscou lentamente e virou-se, desaparecendo entre as plantas.</p>
+       
+       <h2>Capítulo 3 – A porta abre de verdade</h2>
+       <p>Alguns dias depois, a mãe de Coraline precisou sair. O pai estava trabalhando e pediu que ela se distraísse sozinha.</p>
+       
+       <p>Coraline, lembrando da porta na sala, decidiu testá-la mais uma vez.</p>
+       
+       <p>Pegou a chave do armário da cozinha, encaixou na fechadura… e, quando girou, não havia mais tijolos.</p>
+       
+       <p>Em vez disso, um corredor longo e escuro se estendia diante dela. Um ar frio e úmido saiu dali, como se viesse de um lugar que estava esperando ser descoberto.</p>
+       <p>Coraline pegou uma vela e atravessou. O corredor parecia mudar de tamanho enquanto ela andava, e quando finalmente chegou ao outro lado… encontrou sua sala de estar. Mas não era exatamente a mesma.</p>
+       <p>As cores eram mais vivas, o cheiro era mais doce. E, na poltrona, estava sua mãe. Ou melhor… uma mulher idêntica à sua mãe, mas com olhos de botão pretos e brilhantes.</p>
+       
+       <p>— Olá, Coraline — disse a mulher, sorrindo como se a conhecesse há anos. </p>
+       <p>— Estávamos esperando você.</p>
+       
+       
+       <h2>Capítulo 4 – A Outra Mãe e o Outro Pai</h2>
+       <p>Coraline entrou devagar na sala iluminada por uma luz dourada que parecia vir de todos os cantos. O cheiro de comida caseira enchia o ar — algo muito melhor do que os pratos apressados que sua mãe de verdade fazia.</p>
+       
+       <p>— Quem é você? — perguntou, olhando para os botões negros no lugar dos olhos da mulher.</p>
+       
+       <p>— Ora, sou sua Outra Mãe, querida. E ele é seu Outro Pai.</p>
+       
+       <p>Um homem alto, com pele clara e os mesmos olhos de botão, apareceu trazendo uma bandeja. Nela, havia um prato de frango assado, batatas douradas e molho espesso, fumegando.</p>
+       
+       <p>— Estávamos te esperando para o jantar — disse ele com um sorriso suave.</p>
+       
+       <p>Coraline olhou para a mesa: pratos de porcelana, copos de cristal, guardanapos de tecido — tudo como nos filmes que ela via na TV. O cheiro era irresistível, e antes que percebesse, já estava comendo.</p>
+       
+       <p>— Vocês… moram aqui? — ela perguntou, entre uma garfada e outra.</p>
+       
+       <p>— Claro, querida. Esta é sua casa. Sua verdadeira casa — respondeu a Outra Mãe.</p><p> — Aqui, você terá tudo o que sempre quis.</p>
+       <p>Depois do jantar, a Outra Mãe a levou até o quarto. Era como o quarto dela, mas melhor: brinquedos que se mexiam sozinhos, livros cujas ilustrações mudavam a cada olhar, e uma cama macia como nuvem.</p>
+       <p>Coraline deitou-se, meio encantada, meio desconfiada. Quando acordou… estava de volta ao seu próprio quarto, no mundo normal.</p>
+       <h2>Capítulo 5 – O aviso do gato</h2>
+       <p>No dia seguinte, Coraline encontrou o gato preto no jardim. Para sua surpresa, ele falou:</p>
+       <p>— Então… você já esteve lá.</p>
+       <p>Coraline piscou.</p>
+       <p>— Você fala?</p>
+       <p>— Aqui, sim. Lá, também. A Outra Mãe não gosta de mim. Gatos não precisam de botões.</p>
+       <p>O gato explicou que o Outro Mundo era uma armadilha. Que a Outra Mãe criava cópias perfeitas para atrair, prender e “esvaziar” as pessoas.</p>
+       <p>— Não confie nela — o gato disse, antes de desaparecer por entre as roseiras.</p>
+       <h2>Capítulo 6 – A proposta sombria</h2>
+       <p>Coraline voltou ao Outro Mundo para tirar a história a limpo. A Outra Mãe estava à espera, com um sorriso que não chegava a ser quente.</p>
+       <p>— Tenho uma surpresa para você. Se quiser ficar aqui para sempre, basta fazer uma coisinha… — ela abriu uma caixa.</p> <p>Dentro, um par de botões negros e uma agulha prateada.</p>
+       <p>Coraline deu um passo para trás.</p>
+       <p>— Costurar… botões… nos meus olhos?</p>
+       <p>— É só assim que você poderá realmente pertencer a este lugar.</p>
+       <p>O encanto se quebrou. Coraline disse “não” e pediu para voltar. A Outra Mãe fechou o sorriso, e, num piscar, Coraline já estava sozinha no corredor, de volta à sua casa… só que a casa estava vazia.</p>
+       <p>Seus pais tinham desaparecido.</p>
+       
+       
+       <h2>Capítulo 7 – O desaparecimento</h2>
+       <p>Coraline procurou pelos pais em cada canto: cozinha, quartos, banheiro, armários… nada. O casaco do pai ainda estava pendurado, o café da mãe ainda sobre a mesa, mas eles não estavam em lugar nenhum.</p>
+       <p>Naquela noite, ela dormiu sozinha. O silêncio da casa parecia mais pesado do que o normal. No sonho, viu seus pais presos… dentro de um espelho, batendo na superfície, como se quisessem gritar para ela.</p>
+       <p>Quando acordou, soube que não era apenas um sonho. A Outra Mãe os tinha levado.</p>
+       Capítulo 8 – O retorno ao Outro Mundo
+       <p>Determinada, Coraline atravessou a porta outra vez. O corredor estava mais frio e mais longo. A Outra Mãe a recebeu com um sorriso gelado.</p>
+       <p>— Veio ficar, minha querida?</p>
+       <p>— Não. Vim buscar meus pais.</p>
+       <p>A mulher inclinou a cabeça, fingindo surpresa.</p>
+       <p>— Ah, eles? Não sei do que está falando. Mas podemos fazer um jogo.</p>
+       <p>Coraline respirou fundo.</p>
+       <p>— Vamos jogar. Se eu encontrar meus pais e as três crianças que você prendeu antes de mim, você nos deixa ir. Se eu perder, fico aqui para sempre… e deixo você costurar os botões.</p>
+       <p>Os olhos de botão da Outra Mãe brilharam.</p>
+       <p>— Aceito.</p>
+       <h2>Capítulo 9 – As crianças presas</h2>
+       <p>A primeira pista veio de um armário trancado no quarto de Coraline do Outro Mundo. Lá dentro, ela encontrou um fantasma de criança — pálido, com olhos sem vida.</p>
+       <p>— Ela nos pegou… tirou nossas almas — disse a menina fantasma. — Encontre nossos olhos. Eles são a chave para nos libertar.</p>
+       <p>Havia três crianças presas naquele lugar, cada uma com sua alma escondida pela Outra Mãe.</p>
+       <p>O gato apareceu ao lado de Coraline.</p>
+       <p>— Acho que vou te acompanhar — disse ele, com um ar que misturava desafio e diversão.</p>
+       
+       
+       <h2>Capítulo 10 – O primeiro olho</h2>
+       <p>Coraline começou pelo jardim. Mas no Outro Mundo, o jardim não era como ela lembrava — as flores tinham bocas, os arbustos pareciam se mover quando ela não olhava, e o ar tinha um cheiro doce que enjoava.</p>
+       <p>Perto do portão, ela encontrou uma pedra com um buraco no meio, que as senhoritas Spink e Forcible tinham dado para ela no mundo real, dizendo que serviria para “ver o que é de verdade”.</p> <p>Coraline olhou através do buraco e… tudo mudou: as cores ficaram pálidas, e no meio de um canteiro de margaridas, ela viu algo brilhando — um pequeno globo.</p>
+       <p>Assim que tentou pegar, o chão tremeu. Das sombras, surgiu uma criatura enorme, parecida com um inseto misturado com espantalho, cheia de braços finos e longos.</p>
+       <p>Ela correu, se esquivando entre as flores, até que o gato pulou na criatura, arranhando seu rosto. Coraline aproveitou, agarrou o globo e sentiu uma energia quente percorrer a mão.</p>
+       <p>Uma voz suave ecoou ao redor:</p>
+       <p>— Obrigada… — era a alma da primeira criança.</p>
+       <h2>Capítulo 11 – O segundo olho</h2>
+       <p>O próximo lugar era o teatro. No palco, as senhoritas Spink e Forcible do Outro Mundo estavam vestidas com roupas de sereias, cantando para uma plateia cheia de… cães. Todos usavam coleiras brilhantes e batiam palmas como humanos.</p>
+       <p>Coraline subiu no palco fingindo interesse. Mas, quando olhou pelo buraco da pedra, viu que as senhoritas não eram mulheres — eram criaturas deformadas, com pele de saco de areia e olhos famintos.</p>
+       <p>O segundo globo estava dentro de uma concha dourada, pendurada no pescoço de uma delas. Coraline esperou até que a criatura se inclinasse para cumprimentar um dos cães, pulou, arrancou a concha e correu pelos bastidores.</p>
+       <p>Um rugido ecoou, mas quando abriu a concha, encontrou o segundo olho.</p>
+       <p>— Duas de três… — disse para si mesma, tentando controlar o coração acelerado.</p>
+       <h2>Capítulo 12 – O terceiro olho</h2>
+       <p>O último lugar era o apartamento de cima, do homem com o coral de ratos. Só que no Outro Mundo, ele era muito mais estranho: alto demais, curvado, com mãos compridas como garras. Os ratos não cantavam — sibilavam e se moviam juntos, como se fossem um único corpo vivo.
+       Coraline olhou pelo buraco da pedra e viu o terceiro olho… costurado dentro de um saco que os ratos carregavam.</p>
+       <p>Ela avançou, mas os ratos se espalharam e correram pelas paredes. Coraline subiu atrás, pulando móveis, até que um deles caiu no chão. O gato apareceu de novo, mordeu o rato e jogou o globo para Coraline.</p>
+       <p>Assim que segurou, ouviu a última criança suspirar:</p>
+       <p>— Estamos quase livres…</p>
+       
+       
+       <h2>Capítulo 13 – A verdadeira face da Outra Mãe</h2>
+       <p>Coraline, com os três olhos em mãos, começou a correr pelo corredor escuro da Outra Casa. O ar ficou pesado, quase sufocante. De repente, a Outra Mãe apareceu à sua frente, não mais a mulher gentil com olhos de botão, mas uma criatura monstruosa, cheia de braços, com um sorriso que se estendia de orelha a orelha e olhos brilhando como brasas.</p>
+       <p>— Você acha que pode me enganar, pequena? — sua voz era um sussurro ameaçador que ecoava pelas paredes.
+       Coraline sentiu o medo apertar o peito, mas lembrou do gato ao seu lado, com olhar firme.</p>
+       <p>— Eu não tenho medo de você — disse, firme, segurando as almas das crianças.
+       A Outra Mãe avançou, estendendo seus muitos braços para agarrá-la, mas Coraline desviou com agilidade.</p>
+       <h2>Capítulo 14 – A luta pelo resgate</h2>
+       <p>Começou uma corrida pela casa, com portas que se abriam para lugares desconhecidos e corredores que mudavam de forma. Coraline usava a pedra dada pelas senhoritas Spink e Forcible para ver através das ilusões, o gato guiava seus passos com miados baixos e rápidos.</p>
+       <p>Em um momento, Coraline quase foi pega, mas usou o terceiro olho para cegar temporariamente a criatura. Com um salto, atravessou a porta para o mundo real.</p>
+       <h2>Capítulo 15 – A liberdade conquistada</h2>
+       <p>De volta à casa real, Coraline encontrou seus pais sentados no sofá, aparentemente normais, mas ela sabia que algo tinha mudado. Corajosa, contou tudo o que aconteceu, e juntos começaram a reconstruir a ligação que havia ficado frágil.</p>
+       <p>O gato apareceu uma última vez, se espreguiçou e desapareceu na noite.
+       Coraline aprendeu que a coragem não era a ausência do medo, mas a decisão de enfrentá-lo. E, acima de tudo, que sua verdadeira família valia qualquer luta.</p>
+       
+       
+       <h2>Epílogo – Além da porta</h2>
+       <p>Depois daquela aventura, Coraline nunca mais viu a porta misteriosa da mesma maneira. Ela continuava ali, no fundo da sala, trancada, mas agora sabia que existiam mundos que pareciam perfeitos — e eram os mais perigosos de todos.</p>
+       <p>Seus pais, embora ocupados, passaram a dar mais atenção a ela. E Coraline cresceu, guardando dentro de si a coragem e a astúcia que aprendeu naquele Outro Mundo.</p>
+       <p>Ela entendeu que o amor da família não é perfeito, mas é real — e é isso que importa.</p>
+   </div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Online</title>
+    <link rel="shortcut icon" href="img icon.png" type="image/x-icon">
+    <style>
+body {
+  background-color: #3c3a36; /* fundo escuro tipo mesa antiga */
+  font-family: 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  margin: 0;
+}
+
+.book-page {
+  width: 780px;
+  background: #fdf6e3; /* tom de pergaminho */
+  padding: 60px 60px;
+  margin: 20px;
+  border-radius: 25px;
+  box-shadow: inset 0 0 15px rgba(0,0,0,0.1), 0 25px 60px rgba(0,0,0,0.3);
+  line-height: 1.85;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #d4c8b0; /* borda envelhecida */
+}
+
+.book-page::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: repeating-linear-gradient(
+    rgba(0,0,0,0.02) 0px, rgba(0,0,0,0.02) 1px,
+    transparent 1px, transparent 28px
+  );
+  pointer-events: none;
+  border-radius: 25px;
+}
+
+.book-page h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #5b3a21;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+.book-page h2 {
+  text-align: center;
+  font-size: 22px;
+  color: #6e4f34;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.book-page p {
+  text-indent: 50px;
+  text-align: justify;
+  color: #3b2f2f;
+  margin-bottom: 22px;
+}
+
+.book-page .chapter-symbol {
+  text-align: center;
+  font-size: 20px;
+  color: #b58f61;
+  margin: 25px 0;
+  letter-spacing: 2px;
+}
+
+.page-number {
+  text-align: center;
+  margin-top: 35px;
+  font-size: 14px;
+  color: #a98b6c;
+  letter-spacing: 1px;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .book-page {
+    width: 90%;
+    padding: 40px 30px;
+  }
+  .book-page p {
+    text-indent: 30px;
+  }
+}
+</style>
+</head>
+<body>
+    <div class="book-page">
+        <h1>Veronika Decide Morrer</h1>
+           <h2>Capítulo 1 – O Desespero de Veronika</h2>
+        <p>Veronika é uma jovem de 24 anos que, apesar de ter tudo o que poderia desejar – beleza, estabilidade financeira e amigos –, sente um vazio profundo. Cada dia lhe parece monótono, e ela não encontra motivação ou sentido para continuar vivendo. A vida se tornou um ritual sem emoção.</p>
+        
+        <p>Em um ato de desespero, ela decide tirar a própria vida. Ela toma uma overdose de comprimidos, acreditando que a morte seria sua única saída para escapar do tédio e do sofrimento interior. Antes de agir, ela reflete sobre sua vida e percebe que nunca se sentiu verdadeiramente viva.</p>
+        
+        
+        <p>Veronika é rapidamente levada ao hospital psiquiátrico Villete, em Liubliana, onde médicos conseguem salvar sua vida. No entanto, seu estado revela que o coração foi gravemente afetado, e ela terá apenas alguns dias de vida. Essa notícia a abala profundamente, trazendo medo e reflexão sobre o que ainda poderia ter feito com sua vida.</p>
+        
+        <p>No hospital, Veronika começa a observar outros pacientes e percebe que cada pessoa ali tem suas próprias histórias de sofrimento. Esse ambiente estranho, embora assustador, inicia um processo de questionamento interno sobre loucura, liberdade e o verdadeiro significado de viver.</p>
+        
+        <h2>Capítulo 2 – Conhecendo Villete</h2>
+        <p>No hospital, Veronika conhece o cotidiano dos pacientes e descobre que a loucura não é uniforme: cada indivíduo lida com medos e traumas de formas diferentes. Ela observa o comportamento de todos e sente que, de certa forma, todos estão procurando sentido em suas vidas.</p>
+        
+        
+        <p>Entre os pacientes, destaca-se Eduard, um jovem esquizofrênico sensível, que demonstra paixão pela arte e uma profundidade emocional que contrasta com sua doença. Veronika sente curiosidade e atração por ele, vendo nele um reflexo de emoções que ela mesma reprimiu.</p>
+        
+        <p>Ela também observa Zedka, uma mulher desesperançosa que representa o medo de enfrentar a própria existência. Cada encontro de Veronika com os outros pacientes provoca questionamentos sobre o que é normal ou louco, e sobre os limites impostos pela sociedade.</p>
+        
+        <p>Ao longo desse capítulo, a narrativa mostra que o hospital Villete funciona como um microcosmo da sociedade: pessoas presas por suas próprias limitações e medos. Veronika percebe que a loucura pode ser, paradoxalmente, uma forma de liberdade e autoconhecimento.</p>
+        
+        <h2>Capítulo 3 – O Choque da Morte</h2>
+        <p>Veronika recebe a notícia de que seu coração foi danificado e que ela tem poucos dias de vida. Essa revelação provoca um choque intenso e força a jovem a refletir sobre sua existência de forma radical. Ela se pergunta se algum dia realmente viveu ou apenas passou pelos dias mecanicamente.</p>
+        
+        <p>O confronto com a morte iminente desperta emoções que antes estavam adormecidas. Veronika sente medo, raiva e curiosidade sobre como seria aproveitar cada momento restante. Essa experiência a faz questionar seus medos e limitações, e o que realmente significa viver com intensidade.</p>
+        
+        <p>Ela começa a se relacionar de forma diferente com os pacientes ao redor, observando como cada um enfrenta ou evita seus próprios medos. A interação com Eduard, em particular, desperta sentimentos de ternura, paixão e esperança em Veronika.</p>
+        
+        <p>Este capítulo marca a transição de Veronika de uma pessoa passiva, resignada à morte, para alguém que começa a valorar a vida e os relacionamentos, mesmo com a consciência da própria finitude.</p>
+        
+        <p>Capítulo 4 – O Cotidiano no Villete</p>
+        <p>Veronika começa a se acostumar com a rotina do hospital, observando atentamente os hábitos e comportamentos dos outros pacientes. Cada um enfrenta seus medos e traumas de forma diferente, o que faz Veronika refletir sobre como ela mesma evitava lidar com seus sentimentos na vida anterior.</p>
+        
+        <p>Ela percebe que o hospital não é apenas um lugar de sofrimento, mas também um ambiente onde os pacientes podem explorar emoções e pensamentos que a sociedade reprime. A interação com outros internos permite que ela veja o mundo sob uma perspectiva diferente, mais intensa e verdadeira.</p>
+        
+        <p>Eduard continua a exercer grande influência sobre ela, despertando emoções que Veronika não sentia há muito tempo. A relação deles cresce lentamente, baseada em compreensão, sensibilidade e atração mútua, trazendo à tona sentimentos de amor e desejo.</p>
+        
+        <p>Durante o cotidiano no Villete, Veronika começa a perceber pequenas alegrias e prazeres simples da vida, como conversar, observar o ambiente e sentir conexão com outras pessoas. Essa percepção inicia uma transformação em sua maneira de encarar a existência.</p>
+        
+        <h2>Capítulo 5 – Reflexões sobre Loucura e Normalidade</h2>
+        <p>Veronika observa que a linha entre sanidade e loucura é tênue e muitas vezes determinada pela sociedade. No Villete, percebe que pessoas rotuladas como “loucas” podem ter maior liberdade emocional do que aquelas que se conformam com padrões sociais rígidos.</p>
+        
+        <p>Ela se questiona sobre sua própria vida: será que não era ela quem estava “louca” ao se encaixar em expectativas sociais e reprimir seus desejos? Essa reflexão desperta uma nova consciência sobre a importância de seguir o próprio caminho, mesmo que seja diferente do que os outros consideram normal.</p>
+        
+        <p>Os diálogos com médicos e terapeutas também provocam reflexões profundas. Eles discutem livre-arbítrio, o medo da morte e a necessidade de encontrar significado na vida. Veronika entende que cada escolha, cada risco, é parte essencial da experiência humana.</p>
+        
+        <p>Ao final do capítulo, Veronika sente que está começando a se libertar de antigas limitações e traumas, percebendo que a loucura de outros pacientes pode ser, na verdade, uma forma de autenticidade e coragem para viver.</p>
+        
+        <h2>Capítulo 6 – Eduard e a Conexão Profunda</h2>
+        <p>Veronika e Eduard começam a se aproximar de forma mais intensa. Ele compartilha suas experiências de vida e sua visão artística do mundo, mostrando como é possível encontrar beleza e emoção mesmo em situações difíceis.</p>
+        
+        <p>Essa conexão desperta em Veronika sentimentos de amor, desejo e confiança, sensações que ela nunca havia experimentado de forma tão profunda. A proximidade deles revela a importância do relacionamento humano para o autoconhecimento e para a valorização da vida.</p>
+        
+        <p>A relação entre os dois não é apenas romântica, mas também transformadora: Eduard ajuda Veronika a enfrentar seus medos, enquanto ela lhe proporciona coragem e esperança para lidar com sua própria condição mental.</p>
+        
+        <p>Veronika percebe que a vida pode ter significado mesmo em circunstâncias adversas. A conexão emocional com Eduard a faz refletir sobre a fragilidade da existência e a necessidade de aproveitar cada instante conscientemente.</p>
+    </div>
+</body>
+</html>

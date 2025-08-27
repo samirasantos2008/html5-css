@@ -18,4 +18,4 @@
 <li><a href="https://samirasantos2008.github.io/html5-css/Exercicios/desafio">executar Desafio</a></li>
 <li><a href="https://samirasantos2008.github.io/html5-css/Exercicios/trabalho">executar trabalho</a></li>
 <li><a href="https://samirasantos2008.github.io/html5-css/Exercicios/mescla03">Filmes</a></li>
-<li><a href="https://samirasantos2008.github.io/html5-css/Exercicios/mescla03">Filmes</a></li>
+<li><a href="https://samirasantos2008.github.io/html5-css/trabalho tcc2">trabalho tcc</a></li>
